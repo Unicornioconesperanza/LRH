@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRH</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/css1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+          body {background-image: url("img/img1.jpg");}
+          img {vertical-align: middle;}
+          .mySlides {display: none}
+    </style>
+</head>
+<body>
+
+    <nav class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="active">Home</a>
+        <a href="stories.html">Stories</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+
+        <a href="#" class="fa fa-facebook fa2" style="background-color: rgba(255, 255, 255, 0.0); color: #3B5998;"></a>
+        <a href="#" class="fa fa-twitter fa2" style="background-color: rgba(255, 255, 255, 0.0); color: #55ACEE;"></a>
+        <a href="#" class="fa fa-youtube fa2" style="background-color: rgba(255, 255, 255, 0.0); color: #bb0000;"></a>
+        <a href="#" class="fa fa-instagram fa2" style="background-color: rgba(255, 255, 255, 0.0); color: #125688;"></a>
+        <a href="#" class="fa fa-pinterest fa2" style="background-color: rgba(255, 255, 255, 0.0); color: #cb2027;"></a>
+        <a href="#" class="fa fa-tiktok fa2" style="background-color: rgba(255, 255, 255, 0.0);"><img src="img/tiktok.png" style="width: 15px; height: 15px;"></a>
+    </nav>
+    
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+
+
+    <div class="header">
+        <img src="img/logo.png" style="width: 160px; height: 160px; padding: 0%;">
+        <h1 style="font-family: Impact;"><strong style="color: #bb0000">Legacy </strong><strong style="color: rgba(152, 202, 63)">Revolution </strong><strong style="color: #bb15ad">& Hope</strong></h1>
+        <p style="color: white;">"Let's be the revolution, hope and the future that we want to see"</p>
+    </div>
+
+    <div class="content" style="color: #bb15ad">
+        <h1 style="text-align: center;">Stories</h1>
+        <!--<p style="text-align: center;">Some content blablabla, some content blablabla.</p>-->
+        <div class="slideshow-container" style="background-color: white; max-width: 90%; min-width: none;">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img_nature_wide.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img_snow_wide.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img_mountains_wide.jpg" style="width:100%">
+            <!--<div class="text"><strong>Story Three</strong></div>-->
+            
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+        </div>
+        <br><br><br>
+          <!--
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>-->
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+          </script>
+    </div>
+
+</body>
+</html>
