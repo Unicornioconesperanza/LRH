@@ -27,24 +27,6 @@
     document.getElementById("myNav").style.width = "0%";
   }
   </script>
-
-    <!--<nav class="topnav" id="myTopnav">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-        <a href="index.html" class="active">Home</a>
-        <a href="stories.html">Stories</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-
-        <a href="#" class="fa fa-facebook fa2" style="background-color: rgba(255, 255, 255, 0.0); color: #3B5998; float: left;"></a>
-        <a href="#" class="fa fa-twitter fa2" style="background-color: rgba(255, 255, 255, 0.0); color: #55ACEE; float: left;"></a>
-        <a href="#" class="fa fa-youtube fa2" style="background-color: rgba(255, 255, 255, 0.0); color: #bb0000; float: left;"></a>
-        <a href="#" class="fa fa-instagram fa2" style="background-color: rgba(255, 255, 255, 0.0); color: #125688;float: left;"></a>
-        <a href="#" class="fa fa-pinterest fa2" style="background-color: rgba(255, 255, 255, 0.0); color: #cb2027; float: left;"></a>
-        <a href="#" class="fa fa-tiktok fa2" style="background-color: rgba(255, 255, 255, 0.0); float: left;"><img src="img/tiktok.png" style="width: 15px; height: 15px;"></a>
-    </nav>-->
-    
     <script>
       function myFunction() {
         var x = document.getElementById("myTopnav");
@@ -71,15 +53,13 @@
       </div>
 
       <div>
-        <ul class="">
+        <ul>
+
           <li><a class="menu" href="#news" style="text-decoration: none; color: #;">News</a></li>
           <li><a class="menu" href="#contact" style="text-decoration: none; color: #;">Contact</a></li>
           <li><a class="menu active" href="#home" style="text-decoration: none; color: #;">Home</a></li>
-          <li class="menu">
-            <span style="font-size: 30px; cursor: pointer; float: right; border-radius: 50%; padding: 8px 15px 8px 15px;" onclick="openNav()">
-            <i class="fa fa-bars"></i>
-            </span>
-          </li>
+          <li onclick="openNav()"><a class="menu active2" href="#home" style="text-decoration: none; color: #;"><i class="fa fa-bars"  style=""></i></a></li>
+
         </ul>
       </div>
 
@@ -88,37 +68,6 @@
         <p style="color: white; font-size: 4vh;">"Let's be the revolution, hope and the future that we want to see"</p>
     </div>
 
-    <div class="content" style="color: #bb15ad">
-        <div class="slideshow-container" style="background-color: white; max-width: 100%;">
-
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="img_nature_wide.jpg" style="width:100%">
-          </div>
-          
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="img_snow_wide.jpg" style="width:100%">
-          </div>
-          
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img_mountains_wide.jpg" style="width:100%">
-            <!--<div class="text"><strong>Story Three</strong></div>-->
-            
-          </div>
-          
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          
-        </div>
-          <!--
-          
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-          </div>-->
           <script>
             var slideIndex = 1;
             showSlides(slideIndex);
@@ -147,21 +96,51 @@
               dots[slideIndex-1].className += " active";
             }
           </script>
+    
+    <div class="row"> 
+      <div class="column">
+        <div class="contenedor">
+
+          <img src="img/img_nature_wide.jpeg" style="width:100%" class="imagen">
+          <div class="fondo" style="background-color: #bb0000;">
+            <div class="texto">Legacy</div>
+          </div>
+    
+        </div>
+      </div>
+      <div class="column">
+        <div class="contenedor">
+
+          <img src="img/img_nature_wide.jpeg" style="width:100%" class="imagen">
+          <div class="fondo" style="background-color: #98ca3f;">
+            <div class="texto">Revolution</div>
+          </div>
+    
+        </div>
+      </div>  
+      <div class="column">
+        <div class="contenedor">
+
+          <img src="img/img_nature_wide.jpeg" style="width:100%" class="imagen">
+          <div class="fondo">
+            <div class="texto">Hope</div>
+          </div>
+    
+        </div>
+      </div>
+      <div class="column">
+        <div class="contenedor">
+
+          <img src="img/img_nature_wide.jpeg" style="width:100%" class="imagen">
+          <div class="fondo" style="background-color: #000;">
+            <div class="texto">Hello World</div>
+          </div>
+    
+        </div>
+      </div>
     </div>
 
-    <section style="height: 40vh;">
 
-      <article>
-        <h1 style="color: #bb0000; text-align: center;">Nuestro canal de Youtube</h1>
-        <p>London is the capital city of England. It is the most populous city in the  United Kingdom</p>
-      </article>
-
-      <iframe width="560" height="auto" style="max-width: 100%;" src="https://www.youtube-nocookie.com/embed/aiRY36TPVo8" 
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-      </iframe>
-
-    </section>
 
 </body>
 </html>
