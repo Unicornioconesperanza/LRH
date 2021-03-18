@@ -44,7 +44,7 @@ footer {
     top: 0;
     left: 0;
     background-color: #000000;
-    background-color: rgba(187, 21, 173, 0.8);
+    background-color: #8773AAe6;
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -67,7 +67,7 @@ footer {
   }
   
   .overlay a:hover, .overlay a:focus {
-    color: #bb15ad;
+    color: #503D69;
     background-color: white;
   }
   
@@ -147,7 +147,7 @@ footer {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #bb15ad;
+    background-color: #8773AA;
   }
   
   .contenedor:hover .fondo {
@@ -210,17 +210,17 @@ footer {
   
 .menu:hover {
     color: white;
-    background-color: #bb15ad;
+    background-color: #8773AA;
 }
 
 .active {
   background-color: rgba(255, 255, 255, 1);
-  color: rgb(187, 21, 173);
+  color: #8773AA;
 }
 
 .active2 {
   color: rgb(255, 255, 255);
-  background-color: rgb(187, 21, 173);
+  background-color: #8773AA;
 }
 
 .fa-tiktok {
@@ -242,7 +242,7 @@ footer {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: #bb15ad;
+  color: #8773AA;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -257,7 +257,7 @@ footer {
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(187, 21, 173, 0.8);
+  background-color: #8773AAcc;
   color: #fff;
 }
 
